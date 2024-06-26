@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&family=Playwrite+PL:wght@100..400&display=swap');
+body{
+  margin: 0 auto;
+  background-color: #FBD6DF !important; 
+  font-family: "Playwrite PL", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+header{
+    background-color: #fa8fb1;
+}
+main{
+  background-color: #FBD6DF;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+main p{
+    margin: 0;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+#Navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(250, 143, 177, 0.9);
+  height: 91px;
+  -webkit-box-shadow: 0px 5px 25px 10px rgba(250, 143, 177,1);
+  -moz-box-shadow: 0px 5px 25px 10px rgba(250, 143, 177,1);
+  box-shadow: 0px 5px 25px 10px rgba(250, 143, 177,1);
+}
+
+#NavbarIzquierda{
+  display: flex;
+}
+#NavbarIzquierda p{
+  margin: 0px 0px 0px 15px;
+}
+
+.carousel-inner div img{
+  height: 300px;
+  width: 25%;
+}
+.carousel-item.active{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carousel-item.carousel-item-next.carousel-item-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carousel-item.carousel-item-prev.carousel-item-end{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#AnimacionBoton{
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    margin-inline: 15px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-family: "Playwrite PL", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    background-color: #fa8fb1;
+    border: #fa8fb1 5px solid;
+    border-top-left-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+    border-top-right-radius: 17.5px;
+    transition-duration: 0.5s;
+}
+
+
+#AnimacionBoton:hover{
+    transition: 0.35s;
+    border: #fa9ab8 5px solid;
+    background-color: #fa9ab8;
+    -webkit-box-shadow: 10px 5px 15px 0px #b3667e;
+    -moz-box-shadow: 10px 5px 15px 0px #b3667e;
+    box-shadow: 10px 5px 15px 0px #b3667e;
+}
+#AnimacionBoton:active{
+    transform: scale(0.85);
+    -webkit-box-shadow: 5px 2.5px 15px 0px #b3667e;
+    -moz-box-shadow: 5px 2.5px 15px 0px #b3667e;
+    box-shadow: 5px 2.5px 15px 0px #b3667e;
+}
+
+.Logo{
+    width: 75px;
+    height: 75px;
+}
+  
+.carousel-item img {
+    width: 700px;
+    height: 700px;
+}
+
+#caja{
+    width: 100%;
+    place-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 50px 10px #b3667e;
+    -moz-box-shadow: 0px 5px 50px 10px #b3667e;
+    box-shadow: 0px 5px 50px 10px #b3667e;
+}
+#caja p{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productos{
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorProductos{
+    display: flex;
+}
+
+.contenedorProductos div{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin-inline: 50px;
+    border: #fa8fb1 0px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.contenedorProductos div:hover{
+    transition: 0.35s;
+    border: #fa9ab8 0px solid;
+    background-color: #fa9ab8;
+    -webkit-box-shadow: 10px 5px 15px 0px #b3667e;
+    -moz-box-shadow: 10px 5px 15px 0px #b3667e;
+    box-shadow: 10px 5px 15px 0px #b3667e;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedorProductos div img{
+    margin-inline: 100px;
+    width: 250px;
+    height: 250px;
+}
+
+.imgProducto{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+  
+@keyframes carrouselAnimation {
+    0% {transform: translateX(0);}
+    33.33% {transform: translateX(-100%);}
+    66.66% {transform: translateX(-200%);}
+    100% {transform: translateX(0%);}
+}
+
+
+footer {
+  text-align: center;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(250, 143, 177, 0.9);
+  -webkit-box-shadow: 0px -5px 25px 10px rgba(250, 143, 177,1);
+  -moz-box-shadow: 0px -5px 25px 10px rgba(250, 143, 177,1);
+  box-shadow: 0px -5px 25px 10px rgba(250, 143, 177,1);
+}
+
+#f1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#f2 img{
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  margin-inline: 25px;
+  margin-bottom: 10px;
+}
+
+footer a{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+footer ul li{
+    margin-inline: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+
+footer img{
+    margin-top: 50px;
+    width: 125px;
+    height: 125px;
+}
+
+/* ESTILOS EN PAGINAS DE PRODUCTOS */
+.cartaProductos {
+  width: 225px;
+  height: 300px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .4s ease-in-out;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+    
+  } 
+
+.cartaProductos img{
+  width: 175px;
+  height: 250px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .4s ease-in-out;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+}
+  
+  #c1 {
+    background-color: black;
+  }
+  
+  #c2 {
+    background-color: blue;
+  }
+  
+  #c3 {
+    background-color: red;
+  }
+  
+  #c4 {
+    background-color: green;
+  }
+  
+  #c5 {
+    background-color: black;
+  }
+  
+  #c6 {
+    background-color: blue;
+  }
+  
+  #c7 {
+    background-color: red;
+  }
+  
+  .verProductos:hover #c1 {
+    margin-top: 50px;
+    transform: translateX(-600px) rotate(-21deg);
+  }
+  
+  .verProductos:hover #c2 {
+    transform: translateX(-400px) rotate(-14deg);
+  }
+  
+  .verProductos:hover #c3 {
+    transform: translateX(-200px) rotate(-7deg);
+  }
+
+  .verProductos:hover #c5 {
+    margin-top: 50px;
+    transform: translateX(600px) rotate(21deg);
+  }
+  
+  .verProductos:hover #c6 {
+    transform: translateX(400px) rotate(14deg);
+  }
+  
+  .verProductos:hover #c7 {
+    transform: translateX(200px) rotate(7deg);
+  }
+
+  #c1:hover {
+    width: 300px;
+    height: 375px;
+  }
+  
+  #c2:hover {
+    width: 300px;
+    height: 375px;
+  }
+  
+  #c3:hover {
+    width: 300px;
+    height: 375px;
+  }
+  
+  #c4:hover {
+    width: 300px;
+    height: 375px;
+  }
+
+#c5:hover {
+    width: 300px;
+    height: 375px;
+}
+
+#c6:hover {
+    width: 300px;
+    height: 375px;
+}
+
+#c7:hover {
+    width: 300px;
+    height: 375px;
+}
+  .verProductos {
+    display: grid;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-inline: 45%;
+    place-items: center;
+  }
+  .verProductos:hover {
+    display: grid;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-inline: 10%;
+    place-items: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 380px;
+    height: 508px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 2px solid #fa8fb1;
+    border-radius: 1rem;
+  }
+  
+  
+  .flip-card-front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  #cartaAlmohada{
+    background-image: url(../assets/almohadas2.webp);
+    background-position: center;
+  }
+  #cartaTaza{
+    background-image: url(../assets/Taza\ Sub\ amor.jpg);
+    background-position: center;
+  }
+  #cartaRemera{
+    background-image: url(../assets/Remera\ padre.jpg);
+    background-position: center;
+  }
+
+/* ESTILO CARTAS PRODUCTOS PANTALLAS PC */
+
+@media (width <= 1540px){
+
+  .cartaProductos{
+    width: 175px;
+    height: 250px;
+  }
+  .verProductos:hover #c1 {
+    margin-top: 50px;
+    transform: translateX(-450px) rotate(-21deg);
+  }
+  
+  .verProductos:hover #c2 {
+    transform: translateX(-300px) rotate(-14deg);
+  }
+  
+  .verProductos:hover #c3 {
+    transform: translateX(-150px) rotate(-7deg);
+  }
+
+  .verProductos:hover #c5 {
+    margin-top: 50px;
+    transform: translateX(450px) rotate(21deg);
+  }
+  
+  .verProductos:hover #c6 {
+    transform: translateX(300px) rotate(14deg);
+  }
+  
+  .verProductos:hover #c7 {
+    transform: translateX(150px) rotate(7deg);
+  }
+
+  #c1:hover {
+    width: 250px;
+    height: 325px;
+  }
+  
+  #c2:hover {
+    width: 250px;
+    height: 325px;
+  }
+  
+  #c3:hover {
+    width: 250px;
+    height: 325px;
+  }
+  
+  #c4:hover {
+    width: 250px;
+    height: 325px;
+  }
+
+#c5:hover {
+  width: 250px;
+  height: 325px;
+}
+
+#c6:hover {
+  width: 250px;
+  height: 325px;
+}
+
+#c7:hover {
+  width: 250px;
+  height: 325px;
+}
+
+}
+@media (width <= 1160px){
+
+  #caja img{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .cartaProductos{
+    width: 150px;
+    height: 200px;
+  }
+  .verProductos:hover #c1 {
+    margin-top: 50px;
+    transform: translateX(-375px) rotate(-21deg);
+  }
+  
+  .verProductos:hover #c2 {
+    transform: translateX(-250px) rotate(-14deg);
+  }
+  
+  .verProductos:hover #c3 {
+    transform: translateX(-125px) rotate(-7deg);
+  }
+
+  .verProductos:hover #c5 {
+    margin-top: 50px;
+    transform: translateX(375px) rotate(21deg);
+  }
+  
+  .verProductos:hover #c6 {
+    transform: translateX(250px) rotate(14deg);
+  }
+  
+  .verProductos:hover #c7 {
+    transform: translateX(125px) rotate(7deg);
+  }
+
+  #c1:hover {
+    width: 200px;
+    height: 275px;
+  }
+  
+  #c2:hover {
+    width: 200px;
+    height: 275px;
+  }
+  
+  #c3:hover {
+    width: 200px;
+    height: 275px;
+  }
+  
+  #c4:hover {
+  width: 200px;
+  height: 275px;
+  }
+
+#c5:hover {
+  width: 200px;
+  height: 275px;
+}
+
+#c6:hover {
+  width: 200px;
+  height: 275px;
+}
+
+#c7:hover {
+  width: 200px;
+  height: 275px;
+}
+
+}
+
+/* ESTILO CARTAS PRODUCTOS PANTALLAS CELULAR */
+@media (width <= 960px){
+
+  .verProductos{
+    
+    height: 250px;
+    display: flex;
+    gap: 4px;
+    margin-inline: 10%;
+    margin-bottom: 0%;
+  }
+  .verProductos:hover {
+    height: 250px;
+    display: flex;
+    gap: 4px;
+    margin-inline: 10%;
+    margin-bottom: 0px;
+  }
+
+  .cartaProductos{
+    position: relative;
+    width: 80px;
+    height: 160px;
+    border-radius: 4px;
+    padding: 8px;
+    left: 0px;
+    background-color: white;
+    transition: .4s ease-in-out;
+    flex: 1px;
+  }
+  
+
+  .verProductos:hover #c1 {
+    margin-top: 0px;
+    transform: translateX(0px) rotate(0deg);
+  }
+  
+  .verProductos:hover #c2 {
+    transform: translateX(0px) rotate(0deg);
+  }
+  
+  .verProductos:hover #c3 {
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  .verProductos:hover #c5 {
+    
+    margin-top: 0px;
+    transform: translateX(0px) rotate(0deg);
+  }
+  
+  .verProductos:hover #c6 {
+    transform: translateX(0px) rotate(0deg);
+  }
+  
+  .verProductos:hover #c7 {
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  #c1:hover {
+    flex: 150px;
+  }
+  
+  #c2:hover {
+    flex: 150px;
+  }
+  
+  #c3:hover {
+    flex: 150px;
+  }
+  
+  #c4:hover {
+    flex: 150px;
+  }
+
+#c5:hover {
+  flex: 150px;
+}
+
+#c6:hover {
+  flex: 150px;
+}
+
+#c7:hover {
+  flex: 150px;
+}
+
+
+  
+}
+@media (width <= 450px){
+
+  #textoNavbar{
+    font-size:medium;
+  }
+  #imagenNavbar{
+    width: 50px;
+    height: 50px;
+  }
+  #contenedorProducto{
+    width: 280px;
+    height: 408px;
+  }
+  .verProductos{
+    margin-inline: 2%;
+  }
+  .verProductos:hover {
+    margin-inline: 2%;
+  }
+}
+
