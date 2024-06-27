@@ -258,34 +258,6 @@ footer img{
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
 }
   
-  #c1 {
-    background-color: black;
-  }
-  
-  #c2 {
-    background-color: blue;
-  }
-  
-  #c3 {
-    background-color: red;
-  }
-  
-  #c4 {
-    background-color: green;
-  }
-  
-  #c5 {
-    background-color: black;
-  }
-  
-  #c6 {
-    background-color: blue;
-  }
-  
-  #c7 {
-    background-color: red;
-  }
-  
   .verProductos:hover #c1 {
     margin-top: 50px;
     transform: translateX(-600px) rotate(-21deg);
@@ -435,6 +407,10 @@ footer img{
     width: 175px;
     height: 250px;
   }
+  .cartaProductos img{
+    width: 175px;
+    height: 250px;
+  }
   .verProductos:hover #c1 {
     margin-top: 50px;
     transform: translateX(-450px) rotate(-21deg);
@@ -508,6 +484,10 @@ footer img{
     width: 150px;
     height: 200px;
   }
+  .cartaProductos img{
+    width: 150px;
+    height: 200px;
+  }
   .verProductos:hover #c1 {
     margin-top: 50px;
     transform: translateX(-375px) rotate(-21deg);
@@ -575,19 +555,21 @@ footer img{
 @media (width <= 960px){
 
   .verProductos{
-    
-    height: 250px;
+    height: auto;
     display: flex;
     gap: 4px;
     margin-inline: 10%;
     margin-bottom: 0%;
+    flex-wrap: wrap;
   }
   .verProductos:hover {
-    height: 250px;
+    height: auto;
     display: flex;
     gap: 4px;
     margin-inline: 10%;
     margin-bottom: 0px;
+    
+    flex-wrap: wrap;
   }
 
   .cartaProductos{
@@ -599,7 +581,7 @@ footer img{
     left: 0px;
     background-color: white;
     transition: .4s ease-in-out;
-    flex: 1px;
+    flex: 0px;
   }
   
 
@@ -631,36 +613,39 @@ footer img{
   }
 
   #c1:hover {
-    flex: 150px;
+    flex: 0px;
   }
   
   #c2:hover {
-    flex: 150px;
+    flex: 0px;
   }
   
   #c3:hover {
-    flex: 150px;
+    flex: 0px;
   }
   
   #c4:hover {
-    flex: 150px;
+    flex: 0px;
   }
 
 #c5:hover {
-  flex: 150px;
+  flex: 0px;
 }
 
 #c6:hover {
-  flex: 150px;
+  flex: 0px;
 }
 
 #c7:hover {
-  flex: 150px;
+  flex: 0px;
 }
 
 
   
 }
+
+
+
 @media (width <= 450px){
 
   #textoNavbar{
