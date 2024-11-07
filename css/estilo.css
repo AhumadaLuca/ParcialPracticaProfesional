@@ -3,7 +3,7 @@
 body{
   margin: 0 auto;
   background-color: #FBD6DF !important; 
-  font-family: "Playwrite PL", cursive;
+  font-family: "Playwrite PL", cursive !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
@@ -239,6 +239,25 @@ footer img{
 }
 
 /* ESTILOS EN PAGINAS DE PRODUCTOS */
+.Productos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Productos div{
+  margin-inline: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Productos div p{
+  margin-top: 5px;
+}
+
+.Productos div img{
+  width: 225px;
+  height: 300px;
+}
+
 .cartaProductos {
   width: 225px;
   height: 300px;
@@ -398,6 +417,18 @@ footer img{
     background-image: url(../assets/Remera\ padre.jpg);
     background-position: center;
   }
+
+/* ESTILO DE FORMULARIO */
+
+.div-form-correct{
+  border: 2px solid green;
+  color: green;
+}
+.div-form-incorrect{
+  border: 2px solid red;
+  color: red;
+  
+}
 
 /* ESTILO CARTAS PRODUCTOS PANTALLAS PC */
 

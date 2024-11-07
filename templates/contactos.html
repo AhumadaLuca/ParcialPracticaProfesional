@@ -44,26 +44,26 @@
     <div class="container mb-5 mt-5 text-center">
         <h2>Consulta por los productos!</h2>
     </div>
-    <form class="container pb-5">
+    <form class="container pb-5" id="formulario">
         <div class="row g-0 justify-content-center">
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
-            <input type="text" class="form-control" placeholder="Nombre">
+          <div class="div-form col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
+            <input name="nombre" type="text" class="form-control" placeholder="Nombre" required>
           </div>
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
-            <input type="text" class="form-control" placeholder="Apellido">
+          <div class="div-form col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
+            <input name="apellido" type="text" class="form-control" placeholder="Apellido" required>
           </div>
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
-            <input type="email" class="form-control" placeholder="Email">
+          <div class="div-form col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
+            <input name="email" type="email" class="form-control" placeholder="Email" required>
           </div>
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
-            <input type="number" class="form-control" placeholder="Teléfono">
+          <div class="div-form col col-12 col-sm-12 col-md-6 col-lg-6 mb-3 px-3">
+            <input name="telefono" type="number" class="form-control" placeholder="Teléfono" required>
           </div>
           
-          <div class="col col-12 col-sm-12 col-md-12 col-lg-12  px-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hacé tu consulta aquí!"></textarea>
+          <div class="div-form col col-12 col-sm-12 col-md-12 col-lg-12  px-3">
+            <textarea name="consulta" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hacé tu consulta aquí!" required></textarea>
           </div>
           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 mt-4 d-grid gap-2 px-3">
-            <button class="btn btn-primary btn-lg" type="button" style="background-color: #fa8fb1; border-color: #fa8fb1;" id="AnimacionBoton">Enviar</button>
+            <button class="btn btn-primary btn-lg" type="submit" style="background-color: #fa8fb1; border-color: #fa8fb1;" id="AnimacionBoton">Enviar</button>
           </div>
         </div>
       </form>
@@ -87,5 +87,6 @@
     </ul>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="../js/ajax.js">validarFormulario()</script>
+  </body>
 </html>

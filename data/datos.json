@@ -1,0 +1,113 @@
+{
+    "Almohadas":[
+        {
+            "titulo" : "Almohada familiar",
+            "imagen": "../assets/Almohada Sub familia.jpg",
+            "precio": 5500
+        },
+        {
+            "titulo" : "Almohada Feliz Día Mamá",
+            "imagen": "../assets/Almohada Sub feliz dia mama.webp",
+            "precio": 6500
+        },
+        {
+            "titulo" : "Almohada Feliz Nacimiento",
+            "imagen": "../assets/Almohada Sub nacimiento.webp",
+            "precio": 4500
+        },
+        {
+            "titulo" : "Almohada Stitch",
+            "imagen": "../assets/Almohada Sub Stich.jpg",
+            "precio": 7000
+        },
+        {
+            "titulo" : "Almohada Te amo",
+            "imagen": "../assets/Almohada Sub te amo.webp",
+            "precio": 4000
+        },
+        {
+            "titulo" : "Almohada Unicornio",
+            "imagen": "../assets/Almohada Sub unicornio.jpg",
+            "precio": 6500
+        },
+        {
+            "titulo" : "Almohada Up Película",
+            "imagen": "../assets/Almohada Sub Up.jpeg",
+            "precio": 7500
+        }
+    ],
+    "Tazas":[
+        {
+            "titulo": "Taza Argentina",
+            "imagen": "../assets/Taza Sub Argentina.webp",
+            "precio": 6000
+        },
+        {
+            "titulo": "Taza Bob Esponja",
+            "imagen": "../assets/Taza Sub Bob Esponja.jpg",
+            "precio": 6500
+        },
+        {
+            "titulo": "Taza Dragon Ball Z",
+            "imagen": "../assets/Taza Sub Dragon Ball.png",
+            "precio": 5500
+        },
+        {
+            "titulo": "Taza Floral",
+            "imagen": "../assets/Taza Sub Floral.jpg",
+            "precio": 5000
+        },
+        {
+            "titulo": "Taza Ing Industrial",
+            "imagen": "../assets/Taza Sub Ing Industrial.jpg",
+            "precio": 7000
+        },
+        {
+            "titulo": "Taza Mafalda",
+            "imagen": "../assets/Taza Sub Mafalda.jpg",
+            "precio": 6000
+        },
+        {
+            "titulo": "Taza Minnie y Mickey",
+            "imagen": "../assets/Taza Sub Minnie y Mickey.jpg",
+            "precio": 7500
+        }
+    ],
+    "Remeras":[
+        {
+            "titulo": "Remera Among Us",
+            "imagen": "../assets/Remera Sub Among Us.webp",
+            "precio": 5000
+        },
+        {
+            "titulo": "Remera Anime Bleach",
+            "imagen": "../assets/Remera Sub Bleach.webp",
+            "precio": 4500
+        },
+        {
+            "titulo": "Remera Corazón",
+            "imagen": "../assets/Remera Sub Corazon.jpg",
+            "precio": 5500
+        },
+        {
+            "titulo": "Remera Mickey",
+            "imagen": "../assets/Remera Sub Mickey.webp",
+            "precio": 6000
+        },
+        {
+            "titulo": "Remera Gaara",
+            "imagen": "../assets/Remera Sub Gaara.webp",
+            "precio": 4000
+        },
+        {
+            "titulo": "Remera León",
+            "imagen": "../assets/Remera Sub Leon.jpg",
+            "precio": 5500
+        },
+        {
+            "titulo": "Remera Kenshin",
+            "imagen": "../assets/Remera Sub Kenshin.jpg",
+            "precio": 5000
+        }
+    ]
+}
